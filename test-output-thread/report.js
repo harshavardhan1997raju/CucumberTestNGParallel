@@ -1,47 +1,47 @@
 $(document).ready(function() {
 CucumberHTML.timelineItems.pushArray([
   {
-    "id": "01bafe3d-5037-4faf-a1e2-ac675545bebc",
-    "feature": "Login",
-    "scenario": "Login Page Title Validation",
-    "start": 1691324884238,
-    "group": 21,
-    "content": "",
-    "tags": "",
-    "end": 1691324891589,
-    "className": "failed"
-  },
-  {
-    "id": "3c3c427a-8b04-4a89-97a9-b79629ef2cd2",
-    "feature": "Accounts page",
-    "scenario": "Account Page Launch",
-    "start": 1691324884297,
-    "group": 19,
-    "content": "",
-    "tags": "@acc,",
-    "end": 1691324893203,
-    "className": "failed"
-  },
-  {
-    "id": "2ed14fce-8121-4403-bbfd-b40e45eee72e",
-    "feature": "Login",
-    "scenario": "Login Page",
-    "start": 1691324884240,
-    "group": 20,
-    "content": "",
-    "tags": "",
-    "end": 1691324892638,
-    "className": "passed"
-  },
-  {
-    "id": "d8a3fb74-21e9-4b09-8eab-e3c399123bd8",
+    "id": "5b1a74bd-21c9-44e9-ab2a-99afe5f6412b",
     "feature": "Login",
     "scenario": "Launch Login",
-    "start": 1691324884240,
+    "start": 1692722116669,
     "group": 22,
     "content": "",
     "tags": "",
-    "end": 1691324892698,
+    "end": 1692722125782,
+    "className": "passed"
+  },
+  {
+    "id": "1429bf41-4775-4c7e-9d04-f8ff5ccb8ac6",
+    "feature": "Login",
+    "scenario": "Login Page Title Validation",
+    "start": 1692722116671,
+    "group": 21,
+    "content": "",
+    "tags": "",
+    "end": 1692722124386,
+    "className": "failed"
+  },
+  {
+    "id": "fc607d5f-9525-4005-8048-492387d4c026",
+    "feature": "Accounts page",
+    "scenario": "Account Page Launch",
+    "start": 1692722116668,
+    "group": 19,
+    "content": "",
+    "tags": "@acc,",
+    "end": 1692722126095,
+    "className": "failed"
+  },
+  {
+    "id": "cdeba7af-f30e-4e6f-add7-53555f81cfa6",
+    "feature": "Login",
+    "scenario": "Login Page",
+    "start": 1692722116670,
+    "group": 20,
+    "content": "",
+    "tags": "",
+    "end": 1692722124473,
     "className": "passed"
   }
 ]);

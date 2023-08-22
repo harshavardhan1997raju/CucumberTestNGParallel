@@ -1,6 +1,6 @@
 package com.qa.factory;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+//import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -20,13 +20,14 @@ public class DriverFactory {
         System.out.println("Browse value is : " + browser);
 
         if (browser.equalsIgnoreCase("chrome")) {
-            WebDriverManager.chromedriver().setup();
+
+//            WebDriverManager.chromedriver().setup();
             tlDriver.set(new ChromeDriver());
         } else if (browser.equalsIgnoreCase("firefox")) {
-            WebDriverManager.firefoxdriver().setup();
+//            WebDriverManager.firefoxdriver().setup();
             tlDriver.set(new FirefoxDriver());
         } else if (browser.equalsIgnoreCase("edge")) {
-            WebDriverManager.edgedriver().setup();
+//            WebDriverManager.edgedriver().setup();
             tlDriver.set(new EdgeDriver());
         } else {
             System.out.println("Please enter the correct browser name");

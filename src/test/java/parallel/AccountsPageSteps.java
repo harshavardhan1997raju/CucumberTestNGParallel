@@ -29,12 +29,6 @@ public class AccountsPageSteps {
 
         accountsPage =loginPage.doLogin(email,pwd);
 
-
-
-
-
-
-
     }
     @Given("Users on accounts page")
     public void users_on_accounts_page() {

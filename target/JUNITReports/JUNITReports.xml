@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="9.263">
-    <testcase classname="Accounts page" name="Account Page Launch" time="8.906">
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="9.76">
+    <testcase classname="Accounts page" name="Account Page Launch" time="9.426">
         <failure message="expected:&lt;4&gt; but was:&lt;5&gt;" type="java.lang.AssertionError"><![CDATA[Given User has already logged in to application.............................passed
 Given Users on accounts page................................................passed
 Then user get accounts section..............................................passed
@@ -12,16 +12,16 @@ java.lang.AssertionError: expected:<4> but was:<5>
 	at org.junit.Assert.failNotEquals(Assert.java:835)
 	at org.junit.Assert.assertEquals(Assert.java:647)
 	at org.junit.Assert.assertEquals(Assert.java:633)
-	at parallel.AccountsPageSteps.account_selection_count_is(AccountsPageSteps.java:75)
-	at ✽.account selection count is 4(file:///C:/Users/manoh/CucumberProjects/cucumber1/cucumberTestNGPOM/src/test/resources/parallel/AccountPage.feature:19)
+	at parallel.AccountsPageSteps.account_selection_count_is(AccountsPageSteps.java:69)
+	at ✽.account selection count is 4(file:///C:/Users/manoh/CucumberProjects/cucumber1/GIT%20Repos/cucumberJunit/CucumberTestNGParalel1/CucumberTestNGParallel/src/test/resources/parallel/AccountPage.feature:19)
 ]]></failure>
     </testcase>
-    <testcase classname="Login" name="Login Page" time="8.397">
+    <testcase classname="Login" name="Login Page" time="7.803">
         <system-out><![CDATA[Given user is on login page.................................................passed
 And I verify title should be "Login - My Shop"..............................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Login" name="Login Page Title Validation" time="7.351">
+    <testcase classname="Login" name="Login Page Title Validation" time="7.714">
         <failure message="" type="java.lang.AssertionError"><![CDATA[Given user is on login page.................................................passed
 And I verify title should be "Login - My Show"..............................failed
 
@@ -31,10 +31,10 @@ java.lang.AssertionError
 	at org.junit.Assert.assertTrue(Assert.java:42)
 	at org.junit.Assert.assertTrue(Assert.java:53)
 	at parallel.LoginSteps.i_verify_title_should_be(LoginSteps.java:23)
-	at ✽.I verify title should be "Login - My Show"(file:///C:/Users/manoh/CucumberProjects/cucumber1/cucumberTestNGPOM/src/test/resources/parallel/loginPage.feature:9)
+	at ✽.I verify title should be "Login - My Show"(file:///C:/Users/manoh/CucumberProjects/cucumber1/GIT%20Repos/cucumberJunit/CucumberTestNGParalel1/CucumberTestNGParallel/src/test/resources/parallel/loginPage.feature:9)
 ]]></failure>
     </testcase>
-    <testcase classname="Login" name="Launch Login" time="8.457">
+    <testcase classname="Login" name="Launch Login" time="9.112">
         <system-out><![CDATA[Given user is on login page.................................................passed
 And I enter the emailid "automationharsha7@gmail.com".......................passed
 Then I enter Password "Test@123"............................................passed

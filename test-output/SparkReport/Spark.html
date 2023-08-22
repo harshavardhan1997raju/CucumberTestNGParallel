@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Harsha Execution Reports</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Aug 06, 2023 17:58:03</span></a>
+<a href="#"><span class="badge badge-primary">Aug 22, 2023 22:05:15</span></a>
 </li>
 </ul>
 </div>
@@ -71,13 +71,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Aug 06, 2023 17:58:03</h3>
+<h3>Aug 22, 2023 22:05:15</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Aug 06, 2023 17:58:13</h3>
+<h3>Aug 22, 2023 22:05:26</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -167,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"Login":8.407,"Accounts page":8.896
+"Login":9.044,"Accounts page":9.342
 };
 </script>
 <div class="row">
@@ -268,7 +268,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Login</p>
             <p class="text-sm">
-              <span>17:58:04 pm</span> / <span>00:00:08:407</span>
+              <span>22:05:16 pm</span> / <span>00:00:09:044</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -277,9 +277,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Login</h5>
-<span class='badge badge-success'>08.06.2023 17:58:04</span>
-<span class='badge badge-danger'>08.06.2023 17:58:12</span>
-<span class='badge badge-default'>00:00:08:407</span>
+<span class='badge badge-success'>08.22.2023 22:05:16</span>
+<span class='badge badge-danger'>08.22.2023 22:05:25</span>
+<span class='badge badge-default'>00:00:09:044</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -289,7 +289,50 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Login Page</div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Login Page Title Validation</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="parallel.LoginSteps.user_is_on_login_page()">
+                <span>Given user is on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="parallel.LoginSteps.i_verify_title_should_be(java.lang.String)">
+                <span>And I verify title should be "Login - My Show"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at parallel.LoginSteps.i_verify_title_should_be(LoginSteps.java:23)
+	at ✽.I verify title should be "Login - My Show"(file:///C:/Users/manoh/CucumberProjects/cucumber1/GIT%20Repos/cucumberJunit/CucumberTestNGParalel1/CucumberTestNGParallel/src/test/resources/parallel/loginPage.feature:9)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>parallel.ApplicationHooks.takeFailedScreenShot(io.cucumber.java.Scenario)</span>
+      <div>Login_Page_Title_Validation
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded1.png' src="../embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>Login Page</div>
       </div>
     </div>
         <div class="collapse">
@@ -310,7 +353,7 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>Launch Login</div>
+        <div class="node" id="4"><span class="badge log pass-bg mr-2">Pass</span>Launch Login</div>
       </div>
     </div>
         <div class="collapse">
@@ -338,60 +381,17 @@ eventsCount: 5,
           </div>
         </div>
   </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="5"><span class="badge log fail-bg mr-2">Fail</span>Login Page Title Validation</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
-      </div>
-    </div>
-        <div class="">
-          <div class="card-body">
-              <div class="step pass-bg" title="parallel.LoginSteps.user_is_on_login_page()">
-                <span>Given user is on login page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="parallel.LoginSteps.i_verify_title_should_be(java.lang.String)">
-                <span>And I verify title should be "Login - My Show"</span>
-      <div>
-        <textarea disabled class="code-block">java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at parallel.LoginSteps.i_verify_title_should_be(LoginSteps.java:23)
-	at ✽.I verify title should be "Login - My Show"(file:///C:/Users/manoh/CucumberProjects/cucumber1/cucumberTestNGPOM/src/test/resources/parallel/loginPage.feature:9)
-</textarea>
-      
-      </div>
-              </div>
-              <div class="step pass-bg" title="AFTER">
-                <span>parallel.ApplicationHooks.takeFailedScreenShot(io.cucumber.java.Scenario)</span>
-      <div>Login_Page_Title_Validation
-          <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded1.png' src="../embedded1.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="7"
+        <li class="test-item"  status="fail" test-id="5"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Accounts page</p>
             <p class="text-sm">
-              <span>17:58:04 pm</span> / <span>00:00:08:896</span>
+              <span>22:05:16 pm</span> / <span>00:00:09:342</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -400,10 +400,10 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Accounts page</h5>
-<span class='badge badge-success'>08.06.2023 17:58:04</span>
-<span class='badge badge-danger'>08.06.2023 17:58:13</span>
-<span class='badge badge-default'>00:00:08:896</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-success'>08.22.2023 22:05:16</span>
+<span class='badge badge-danger'>08.22.2023 22:05:26</span>
+<span class='badge badge-default'>00:00:09:342</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
 </div>
@@ -412,7 +412,7 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="8"><span class="badge log fail-bg mr-2">Fail</span>Account Page Launch</div>
+        <div class="node" id="6"><span class="badge log fail-bg mr-2">Fail</span>Account Page Launch</div>
           <div class="status-avatar float-right mr-4">
             <i class="fa fa-paperclip"></i>
           </div>
@@ -447,8 +447,8 @@ eventsCount: 5,
 	at org.junit.Assert.failNotEquals(Assert.java:835)
 	at org.junit.Assert.assertEquals(Assert.java:647)
 	at org.junit.Assert.assertEquals(Assert.java:633)
-	at parallel.AccountsPageSteps.account_selection_count_is(AccountsPageSteps.java:75)
-	at ✽.account selection count is 4(file:///C:/Users/manoh/CucumberProjects/cucumber1/cucumberTestNGPOM/src/test/resources/parallel/AccountPage.feature:19)
+	at parallel.AccountsPageSteps.account_selection_count_is(AccountsPageSteps.java:69)
+	at ✽.account selection count is 4(file:///C:/Users/manoh/CucumberProjects/cucumber1/GIT%20Repos/cucumberJunit/CucumberTestNGParalel1/CucumberTestNGParallel/src/test/resources/parallel/AccountPage.feature:19)
 </textarea>
       
       </div>
@@ -511,9 +511,9 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>17:58:04 pm</td>
+<td>22:05:16 pm</td>
 <td>
-<a href="#" class="linked" test-id='7' id='8'>Account Page Launch</a>
+<a href="#" class="linked" test-id='5' id='6'>Account Page Launch</a>
 <div class="">
 <span class="badge badge-default">Accounts page.Account Page Launch</span>
 </div>
@@ -563,9 +563,9 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>17:58:11 pm</td>
+<td>22:05:23 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='20'>And I verify title should be "Login - My Show"</a>
+<a href="#" class="linked" test-id='1' id='19'>And I verify title should be "Login - My Show"</a>
 <div class="">
 <span class="badge badge-default">Login.Login Page Title Validation.And I verify title should be "Login - My Show"</span>
 </div>
@@ -573,9 +573,9 @@ eventsCount: 5,
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>17:58:12 pm</td>
+<td>22:05:25 pm</td>
 <td>
-<a href="#" class="linked" test-id='7' id='32'>And account selection count is 4</a>
+<a href="#" class="linked" test-id='5' id='32'>And account selection count is 4</a>
 <div class="">
 <span class="badge badge-default">Accounts page.Account Page Launch.And account selection count is 4</span>
 </div>
