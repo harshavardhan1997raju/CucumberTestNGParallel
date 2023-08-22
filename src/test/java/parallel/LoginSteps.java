@@ -20,6 +20,7 @@ public class LoginSteps {
     @Given("I verify title should be {string}")
     public void i_verify_title_should_be(String expectedTitle) {
         String actualTitle=loginpg.getLoginPageTitle();
+        System.out.println("To check Github Hook trigger");
         Assert.assertTrue(expectedTitle.equals(actualTitle));
 
     }
